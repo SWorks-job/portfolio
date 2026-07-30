@@ -1,0 +1,566 @@
+/* ==========================================
+   Ver.2.0 Portfolio
+   style.css
+========================================== */
+
+/* ---------- リセット ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- 全体 ---------- */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family:
+        "Yu Gothic",
+        "Meiryo",
+        sans-serif;
+
+    background: #F5F7FA;
+
+    color: #333333;
+
+    line-height: 1.8;
+
+}
+
+/* ---------- 共通 ---------- */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+.section {
+
+    padding: 80px 0;
+
+}
+
+.section h2 {
+
+    font-size: 2rem;
+
+    color: #1E3A5F;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(135deg, #1E3A5F 0%, #29598A 100%);
+
+    color: white;
+
+    text-align: center;
+
+}
+
+/* ←ここに追加 */
+.hero .container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.hero h1 {
+
+    font-size: 3.2rem;
+
+    margin-bottom: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+.subtitle {
+
+    font-size: 1.4rem;
+
+    letter-spacing: 6px;
+
+    opacity: .85;
+
+    margin-bottom: 35px;
+
+    text-transform: uppercase;
+
+}
+
+.lead {
+
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+    margin-bottom: 45px;
+
+}
+
+/* ---------- ボタン ---------- */
+
+.button {
+
+    display: inline-block;
+
+    background: #3B82F6;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 16px 38px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .18);
+
+    transition: all .3s ease;
+
+}
+
+.button:hover {
+
+    background: #2563EB;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .25);
+
+}
+
+/* ---------- カード一覧 ---------- */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+}
+
+.card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .15);
+
+}
+
+
+.card h3 {
+
+    color: #1E3A5F;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 15px;
+
+}
+
+.card a {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+/* ---------- リスト ---------- */
+
+ul {
+
+    list-style: none;
+
+}
+
+li {
+
+    background: white;
+
+    margin-bottom: 15px;
+
+    padding: 18px 25px;
+
+    border-left: 5px solid #3B82F6;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+
+    background: #1E3A5F;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+}
+
+footer p {
+    line-height: 2;
+}
+
+/* ---------- スマホ ---------- */
+
+@media (max-width:768px) {
+
+    .hero {
+
+        padding: 80px 20px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .subtitle {
+
+        font-size: 1.2rem;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .section {
+
+        padding: 60px 0;
+
+    }
+
+    .profile-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .profile-icon {
+
+        margin-bottom: 20px;
+
+    }
+
+    .work-sample {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ==========================
+   Section Title
+========================== */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    display: block;
+    color: #3B82F6;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    color: #1E3A5F;
+    margin-bottom: 0;
+}
+
+/* ==========================
+   Profile
+========================== */
+
+.profile-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+
+}
+
+.profile-icon {
+
+    width: 140px;
+
+    height: 140px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+
+}
+
+.profile-icon img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .15);
+
+}
+
+.profile-text h3 {
+
+    font-size: 2rem;
+
+    color: #1E3A5F;
+
+    margin-bottom: 15px;
+
+}
+
+.profile-text p {
+
+    margin-bottom: 15px;
+
+}
+
+/* ==========================
+   Scroll
+========================== */
+
+.scroll-down {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
+
+.scroll-down a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 2px;
+
+    opacity: .8;
+
+    animation: scrollMove 2s infinite;
+
+}
+
+@keyframes scrollMove {
+
+    0% {
+        transform: translateY(0);
+        opacity: .3;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: .3;
+    }
+
+}
+
+/* ==========================
+   Contact
+========================== */
+
+#contact {
+
+    text-align: center;
+
+}
+
+#contact p {
+
+    margin-bottom: 30px;
+
+}
+
+#contact .button {
+
+    margin-top: 10px;
+
+}
+
+/* ==========================
+   Work Sample
+========================== */
+
+.work-sample {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+/* ==========================
+   Project Table
+========================== */
+
+.project-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+}
+
+.project-table th {
+
+    width: 30%;
+
+    background: #1E3A5F;
+
+    color: white;
+
+    padding: 18px;
+
+    text-align: left;
+
+    font-weight: bold;
+
+}
+
+.project-table td {
+
+    padding: 18px;
+
+    background: #F7F9FC;
+
+}
+
+.project-table tr:not(:last-child) {
+
+    border-bottom: 1px solid #E5E7EB;
+
+}
+
+/* ==========================
+   Result
+========================== */
+
+.result-card {
+
+    text-align: center;
+
+    padding: 60px 40px;
+
+}
+
+.result-card p {
+
+    margin-bottom: 35px;
+
+    font-size: 1.05rem;
+
+}
