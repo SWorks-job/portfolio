@@ -564,3 +564,30 @@ footer p {
     font-size: 1.05rem;
 
 }
+
+/* ==========================
+   video-info
+========================== */
+.video-info {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #F7F9FC;
+
+    border-left: 4px solid #3B82F6;
+
+    border-radius: 8px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+
+}
+
+.video-info p {
+
+    margin-bottom: 8px;
+
+}
